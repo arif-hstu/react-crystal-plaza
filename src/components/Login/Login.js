@@ -27,7 +27,7 @@ const Login = () => {
 
     // handle google sign in
     const handleGoogleSignIn = () => {
-        // promise to sing in with popup
+        // promise to sign in with popup
         firebase.auth()
             .signInWithPopup(googleProvider)
             .then((result) => {
