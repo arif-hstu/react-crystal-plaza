@@ -1,5 +1,6 @@
 import React from 'react';
 import Room from '../Room/Room';
+import { useEffect } from 'react';
 
 const Home = () => {
     const style = {
@@ -39,12 +40,20 @@ const Home = () => {
             price: 199
         }
     ]
+
+    useEffect(() => {
+        fetch('http://localhost:5000')
+        .then(res => res.json())
+        .then(data => console.log(data))
+    })
     return (
+        <>
         <div style={style}>
             {
                 rooms.map(room => <Room key={room.bedType} room={room}></Room>)
             }
         </div>
+        </>
     );
 };
 
