@@ -38,15 +38,6 @@ const Home = () => {
             bedType: 'Family',
             avatar: 'F',
             price: 199
-        },
-        {
-            title: 'Single Capacity Room',
-            description: 'Have losts of in-room facilites and are designed in open-contcept living area.',
-            imgUrl: 'https://cdn.jumeirah.com/-/mediadh/dh/hopitality/jumeirah/hotels/dubai/burj-al-arab-jumeirah/room/presidential-two-bedroom-suite/burj-al-arab-presidentail-suit-guest-bedroom_16-9_landscape.jpg?w=2080',
-            bed: 2,
-            capacity: 4,
-            avatar: 'F',
-            price: 199
         }
     ]
 
