@@ -15,7 +15,7 @@ export default function DatePicker(props) {
 
   return (
     <MuiPickersUtilsProvider utils={DateFnsUtils}>
-      <Grid container justify="space-around">
+      <Grid >
         <KeyboardDatePicker
           disableToolbar
           variant="inline"
