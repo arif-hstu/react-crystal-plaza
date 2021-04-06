@@ -3,7 +3,11 @@ import Room from '../Room/Room';
 import { useEffect, useState } from 'react';
 
 const Home = () => {
-   
+    const style = {
+        display: 'flex',
+        margin: '40px',
+        justifyContent: 'space-between'
+    }
     const rooms = [
         {
             title: 'Standard Single Room',
