@@ -15,7 +15,7 @@ export default function DatePicker(props) {
 
   return (
     <MuiPickersUtilsProvider utils={DateFnsUtils}>
-      <Grid >
+      <Grid container justify="space-around">
         <KeyboardDatePicker
           disableToolbar
           variant="inline"
@@ -26,7 +26,7 @@ export default function DatePicker(props) {
           value={selectedDate}
           onChange={handleDateChange}
           KeyboardButtonProps={{
-            'aria-label': 'change date',
+            'aria-label':  'change date',
           }}
         />
       </Grid>
