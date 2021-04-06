@@ -31,16 +31,12 @@ const Login = () => {
         firebase.auth()
             .signInWithPopup(googleProvider)
             .then((result) => {
-                // The signed-in user info.
                 var user = result.user;
                 console.log(user);
-                // set state of new user
                 setLoggedInUser(user);
                 history.replace(from);
             }).catch((error) => {
-                // Handle Errors here.
                 var errorMessage = error.message;
-                // The email of the user's account used.
                 var email = error.email;
             });
     }
