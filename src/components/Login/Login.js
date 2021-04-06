@@ -48,7 +48,7 @@ const Login = () => {
     return (
         <div>
             <h1>This is Login User: {loggedInUser.email} </h1>
-            <button onClick={handleGoogleSignIn}>Google Sign In</button>
+
         </div>
     );
 };
