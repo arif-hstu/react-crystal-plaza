@@ -71,18 +71,6 @@ const Book = () => {
             <h4> name : {loggedInUser.displayName} </h4>
             <button onClick={loadData}>Show Age</button>
             <p>Your age is {ageFromDatabase}</p>
-
-                        <DatePicker date={[selectedDate, setSelectedDate]}/>
-            <input onBlur={handleBlur} type='text' placeholder='Your Age' />
-            <button onClick={handleBook} > Book </button>
-            <h1> Let 's book a {bedType} Room.</h1>
-            <p> Want a <Link to="/home"> different room ? </Link>
-            </p>
-            <h4> name : {loggedInUser.displayName} </h4>
-            <button onClick={loadData}>Show Age</button>
-            <p>Your age is {ageFromDatabase}</p>
-
-
         </div>
     );
 };
